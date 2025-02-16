@@ -1,0 +1,734 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../htmlclass/ASSET/Eagle.webp" />
+    <link rel="stylesheet" href="" />
+    <title>Usha interior</title>
+    <style>
+      .Projectpart {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar {
+        background-color: black;
+        color: white;
+        position: sticky;
+      }
+      .Contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .Innovate {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #ebedef;
+        margin-top: 5%;
+        /* transform: translateX(50px); */
+      }
+      .menu-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+        position: relative;
+      }
+
+      /* Dropdown box styling */
+      .dropdown-box {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        gap: 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 30px;
+        z-index: 1000;
+      }
+
+      /* Links inside the dropdown */
+      .dropdown-box a {
+        display: flex;
+        text-decoration: none;
+        color: white;
+        margin: 5px;
+        font-size: 16px;
+        width: 60px;
+      }
+
+      /* Hover effect to show dropdown */
+      .menu-container:hover .dropdown-box {
+        display: flex;
+      }
+
+      form {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-top: 10px;
+        padding: 20px;
+        width: 100%;
+        max-width: 400px;
+        animation: fadeIn 1s ease-in-out;
+      }
+      h1 {
+        text-align: center;
+        color: #4caf50;
+      }
+      label {
+        font-weight: bold;
+        margin-top: 10px;
+        display: block;
+      }
+      .phone-group {
+        display: flex;
+        gap: 5px;
+      }
+      select,
+      input,
+      textarea,
+      button {
+        width: 100%;
+        margin: 5px 0 15px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      select {
+        flex: 1;
+      }
+      .phone-input {
+        flex: 2;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @media (max-width: 600px) {
+        form {
+          padding: 15px;
+        }
+        button {
+          font-size: 14px;
+        }
+      }
+      #thank-you-message {
+        display: none;
+        text-align: center;
+        background-color: #e7f9e7;
+        color: #4caf50;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 1s ease-in-out;
+      }
+      #back-button {
+        background-color: #007bff;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+      }
+      #back-button:hover {
+        background-color: #0056b3;
+      }
+      .textani {
+        animation-name: textani;
+        animation-duration: 4s;
+        animation-direction: normal;
+      }
+      @keyframes textani {
+        from {
+          opacity: 0;
+          margin-top: 300px;
+        }
+        to {
+          opacity: 100%;
+          margin-bottom: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+
+          justify-content: space-between;
+          /* align-items: center; */
+        "
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            gap: 10px;
+            margin: 5px;
+          "
+        >
+          <img
+            src="../ushainterproject/assects/Usha interior.jpg"
+            width="70px"
+            height="70px"
+            style="border-radius: 35px"
+          />
+          <p style="font-size: 30px; font-weight: bold; color: white">
+            Usha interior
+          </p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              gap: 50px;
+              align-items: center;
+              margin-right: 40px;
+            "
+          >
+            <div class="menu-container">
+              <p style="color: white; font-weight: bold; font-size: 20px">01</p>
+              <a href="./Homepageinter.html" style="text-decoration: none">
+                <p
+                  style="
+                    color: white;
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin: 0;
+                  "
+                >
+                  Home
+                </p>
+              </a>
+
+              <!-- Dropdown box -->
+              <!-- <div class="dropdown-box">
+                <a href="#section1">Section 1</a>
+                <a href="#section2">Section 2</a>
+                <a href="#section3">Section 3</a>
+              </div> -->
+            </div>
+
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 5px;
+              "
+            >
+              <p style="color: white; font-weight: bold; font-size: 20px">02</p>
+
+              <a href="./Aboutpage.html" style="text-decoration: none">
+                <p
+                  style="
+                    color: white;
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin: 0;
+                  "
+                >
+                  About Us
+                </p></a
+              >
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 5px;
+              "
+            >
+              <p style="color: white; font-weight: bold; font-size: 20px">03</p>
+              <a href="./Services.html" style="text-decoration: none">
+                <p
+                  style="
+                    color: white;
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin: 0;
+                  "
+                >
+                  Services
+                </p></a
+              >
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 5px;
+              "
+            >
+              <p style="color: white; font-weight: bold; font-size: 20px">04</p>
+              <a href="./Portfolio.html" style="text-decoration: none">
+                <p
+                  style="
+                    color: white;
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin: 0;
+                  "
+                >
+                  Portfolio
+                </p></a
+              >
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 5px;
+              "
+            >
+              <p style="color: white; font-weight: bold; font-size: 20px">05</p>
+              <a href="./Blog.html" style="text-decoration: none">
+                <p
+                  style="
+                    color: white;
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin: 0;
+                  "
+                >
+                  Blog
+                </p></a
+              >
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 5px;
+              "
+            >
+              <p style="color: white; font-weight: bold; font-size: 20px">06</p>
+              <a href="./Contact.html" style="text-decoration: none">
+                <p
+                  style="
+                    color: white;
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin: 0;
+                  "
+                >
+                  Contact
+                </p></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="textani">
+    <div
+      style="
+        background-image: url(../ushainterproject/assects/19.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 90%;
+        width: 100%;
+      "
+    >
+      <a href="./Blog.html" style="text-decoration: none">
+        <p style="color: white; font-size: 25px; margin: 0">
+          <span style="color: burlywood"> Home</span>/Contact Us
+        </p></a
+      >
+      <p style="color: white; font-size: 80px; margin: 0">Contact Us</p>
+    </div>
+    </div>
+    <h1
+      style="
+        font-size: 50px;
+        margin-top: 8%;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 5%;
+        color: rgb(49, 48, 47);
+      "
+    >
+      Contact Us
+    </h1>
+    <div class="Contact">
+      <div style="display: flex; flex-direction: column; margin-bottom: 300px">
+        <p style="color: rgb(88, 85, 81); font-size: 30px; font-weight: bold">
+          Unique Architecture & Interior Design Firm
+        </p>
+        <p style="color: rgb(88, 85, 81); font-size: 20px">
+          A team of architects, designers, engineers, and other specialists
+          <br />
+          usually make up an architecture firm,<br />
+          which is a professional organization <br />
+          that specializes in offering architectural services.
+        </p>
+        <a href="" style="color: rgb(154, 133, 102); font-size: 20px"
+          >Hot Line: +23 656 665 455</a
+        >
+      </div>
+
+      <div
+        style="
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 240px;
+        "
+      >
+        <p style="color: rgb(33, 32, 31); font-size: 30px; font-weight: bold">
+          Contact Details
+        </p>
+        <br />
+        <div style="display: flex; flex-direction: column">
+          <p style="color: rgb(154, 133, 102); font-size: 20px">Address:</p>
+          <p style="color: rgb(154, 133, 102); font-size: 20px">Phone:</p>
+          <p style="color: rgb(154, 133, 102); font-size: 20px">Mail:</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <p style="color: rgb(56, 55, 54); font-size: 20px">
+            1058 Helton Ave, Stky<br />
+            Berlin, Germany
+          </p>
+          <p style="color: rgb(56, 55, 54); font-size: 20px">+23 5825-32535</p>
+          <p style="color: rgb(56, 55, 54); font-size: 20px">inno@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- comtact form -->
+      <form id="contact-form" style="margin: 0">
+        <h1>Usha Interior</h1>
+        <h4>
+          Respond to us Make an Interior Reservation Make your house your ideal
+          place to live.
+        </h4>
+        <label for="firstname">First Name:</label>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="First Name"
+          required
+        />
+
+        <label for="lastname">Last Name:</label>
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="Last Name"
+          required
+        />
+
+        <label for="phone">Phone Number:</label>
+        <div class="phone-group">
+          <select id="country-code" name="country-code" required>
+            <option value="" disabled selected>Country Code</option>
+            <option value="+91">+91 (India)</option>
+            <option value="+1">+1 (United States)</option>
+            <option value="+1">+971 (Dubai)</option>
+            <option value="+44">+44 (United Kingdom)</option>
+            <option value="+61">+61 (Australia)</option>
+            <option value="+49">+49 (Germany)</option>
+            <option value="+33">+33 (France)</option>
+            <option value="+81">+81 (Japan)</option>
+            <option value="+55">+55 (Brazil)</option>
+            <option value="+27">+27 (South Africa)</option>
+          </select>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="phone-input"
+            placeholder="XXX-XXX-XXXX"
+            required
+          />
+        </div>
+
+        <label for="email">Email ID:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="text@example.com"
+          required
+        />
+
+        <label for="address">Address:</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          placeholder="Enter Your Address"
+          required
+        />
+
+        <label for="design">Selected Interior Design:</label>
+        <select id="design" name="design" required>
+          <option value="" disabled selected>Select a design</option>
+          <option value="modern">Space planning</option>
+          <option value="classic">Interior design</option>
+          <option value="rustic">Architectural Design</option>
+          <option value="minimalist">Home Renovation</option>
+        </select>
+
+        <label for="enquiry">Enquiry:</label>
+        <textarea
+          id="enquiry"
+          name="enquiry"
+          placeholder="Your enquiry here"
+          required
+        ></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="Innovate">
+      <div
+        style="display: flex; flex-direction: column; justify-content: center"
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <img
+            src="../ushainterproject/assects/Usha interior.jpg"
+            width="50px"
+            height="50px"
+            style="border-radius: 30px"
+          />
+          <p style="font-size: 30px; font-weight: bold; color: black">
+            Usha interior
+          </p>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 0;
+          "
+        >
+          <div class="A1">
+            <img
+              src="../ushainterproject/assects/facebook-app-symbol.png"
+              width="35px"
+              height="35px"
+              style="padding: 5px; border-radius: 60px; border: 1px solid black"
+            />
+          </div>
+          <img
+            src="../ushainterproject/assects/twitter (1).png"
+            width="35px"
+            height="35px"
+            style="padding: 5px; border-radius: 60px; border: 1px solid black"
+          />
+          <img
+            src="../ushainterproject/assects/Youtube.png"
+            width="35px"
+            height="35px"
+            style="padding: 5px; border-radius: 60px; border: 1px solid black"
+          />
+          <img
+            src="../ushainterproject/assects/linkedin.png"
+            width="35px"
+            height="35px"
+            style="padding: 5px; border-radius: 60px; border: 1px solid black"
+          />
+        </div>
+      </div>
+
+      <div
+        style="display: flex; flex-direction: column; justify-content: center"
+      >
+        <p style="font-size: 20px; color: #404244; margin: 5px">
+          1058 Helton Ave, Stky
+        </p>
+        <p style="font-size: 20px; color: #404244; margin: 5px">
+          Berlin, Germany
+        </p>
+        <div style="margin-top: 10px">
+          <p style="font-size: 20px; color: black; margin: 5px">
+            +23 5825-32535
+          </p>
+          <p style="font-size: 20px; color: #7b736a; margin: 5px">
+            Call us for support
+          </p>
+        </div>
+        <div style="margin-top: 10px">
+          <p style="font-size: 20px; color: black; margin: 5px">
+            inno@gmail.com
+          </p>
+          <p style="font-size: 20px; color: #7b736a; margin: 5px">
+            Email us for query
+          </p>
+        </div>
+      </div>
+      <div
+        style="display: flex; flex-direction: column; justify-content: center"
+      >
+        <p style="font-size: 20px">Useful Links</p>
+        <p style="font-size: 20px; color: #7b736a; margin: 5px">Why Choose</p>
+        <p style="font-size: 20px; color: #7b736a; margin: 5px">Read Blog</p>
+        <p style="font-size: 20px; color: #7b736a; margin: 5px">Work Process</p>
+        <p style="font-size: 20px; color: #7b736a; margin: 5px">FAQs</p>
+        <p style="font-size: 20px; color: #7b736a; margin: 5px">Support</p>
+      </div>
+      <div
+        style="display: flex; flex-direction: column; justify-content: center"
+      >
+        <p style="font-size: 20px">News Letter</p>
+        <div style="margin-top: 10px">
+          <p style="font-size: 20px; color: #7b736a; margin: 5px">
+            Subscribe to our newsletter &
+          </p>
+          <p style="font-size: 20px; color: #7b736a; margin: 5px">
+            get all the latest news.
+          </p>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+          "
+        >
+          <p style="font-size: 20px; color: #7b736a">
+            get all the latest news.
+          </p>
+          <img
+            src="../ushainterproject/assects/arrow_forward.png"
+            width="40px"
+            height="20px"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20%;
+      "
+    >
+      <p style="font-size: 20px; color: #686c71">
+        Copyright 2025. All Rights Reserved.
+      </p>
+
+      <div style="display: flex; flex-direction: row; gap: 50px">
+        <p style="font-size: 20px; color: #686c71">Terms & conditions</p>
+        <p style="font-size: 20px; color: #686c71">Privacy policy</p>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", submitForm);
+      document
+        .getElementById("back-button")
+        .addEventListener("click", showForm);
+
+      function submitForm(e) {
+        e.preventDefault();
+
+        let data = {
+          firstname: document.getElementById("firstname").value,
+          lastname: document.getElementById("lastname").value,
+          phone:
+            document.getElementById("country-code").value +
+            document.getElementById("phone").value,
+          email: document.getElementById("email").value,
+          address: document.getElementById("address").value,
+          design: document.getElementById("design").value,
+          enquiry: document.getElementById("enquiry").value,
+        };
+
+        fetch(
+          "https://script.google.com/macros/s/AKfycbxUgP8vicepzAA0F1arfNWzXHdQBpYw8rPM5ar-oAWfOJoEzk34dG-YKCcTMyBZvM_6LA/exec",
+          {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          }
+        )
+          .then((response) => {
+            console.log("Success!", response);
+            document.getElementById("contact-form").reset();
+            document.getElementById("contact-form").style.display = "block";
+            document.getElementById("thank-you-message").style.display =
+              "block";
+          })
+          .catch((error) => {
+            console.error("Error!", error.message);
+          });
+      }
+
+      function showForm() {
+        document.getElementById("thank-you-message").style.display = "block";
+        document.getElementById("contact-form").style.display = "block";
+      }
+    });
+  </script>
+</html>

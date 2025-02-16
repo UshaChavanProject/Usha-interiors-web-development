@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      .checkbox-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .checkbox-container input[type="checkbox"] {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+      }
+      .checkbox-container label {
+        font-size: 12px;
+      }
+      .error {
+        color: red;
+        font-size: 12px;
+        text-align: end;
+        align-self: flex-end;
+        margin-left: 50%;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-image: url('../ushainterproject/assects/19.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    "
+  >
+    <center>
+      <div
+        style="
+          background: linear-gradient(
+            rgb(34, 34, 34),
+            rgb(166, 165, 165),
+            rgb(175, 171, 171),
+            rgb(100, 99, 99)
+          );
+          border: 1px solid black;
+          border-radius: 10px;
+          width: 400px;
+          height: 650px;
+          margin-top: 60px;
+        "
+      >
+        <div>
+          <img
+            src="../ushainterproject/assects/Usha interior.jpg"
+            width="120px"
+            height="120px"
+            style="margin-top: 60px; border-radius: 60px"
+            alt="Login"
+          /><br />
+          <h2>Usha Interior Login</h2>
+        </div>
+        <form id="form">
+          <div style="margin: 5px">
+            <label
+              for="email"
+              style="
+                color: rgb(216, 68, 68);
+                font-weight: bold;
+                background-color: blanchedalmond;
+                padding: 10px;
+                border-radius: 10px;
+              "
+              >Email-ID</label
+            >
+            <input
+              id="email"
+              name="email"
+              type="email"
+              style="padding: 8px; margin: 5px; border-radius: 10px"
+              placeholder="Enter the email"
+            />
+            <br />
+            <span class="error" id="emailError"></span><br /><br />
+            <label
+              for="password"
+              style="
+                color: rgb(236, 45, 45);
+                font-weight: bold;
+                background-color: blanchedalmond;
+                padding: 10px;
+                border-radius: 10px;
+              "
+              >Password</label
+            >
+            <input
+              style="padding: 8px; margin: 5px; border-radius: 10px"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter the password"
+            />
+            <br />
+            <div style="display: flex; align-items: end; justify-content: end">
+              <a
+                href="./Forgetpassword.html"
+                style="font-size: 15px; margin-right: 20px"
+                >Forget Password</a
+              >
+            </div>
+
+            <span class="error" id="passwordError"></span><br /><br />
+            <div class="checkbox-container">
+              <input type="checkbox" id="checkbox" name="terms" />
+              <label
+                style="
+                  background-color: blanchedalmond;
+                  font-weight: bold;
+                  padding: 5px;
+                  border-radius: 10px;
+                  margin-top: 0;
+                "
+                for="terms"
+                >I agree to the terms and conditions applied</label
+              >
+            </div>
+            <br />
+            <span class="error" id="checkboxError"></span><br />
+            <button
+              style="
+                margin-left: 50px;
+                margin-top: 5px;
+                width: 100px;
+                height: 30px;
+                color: black;
+                background-color: blanchedalmond;
+                font-weight: bold;
+                color: rgb(218, 23, 23);
+                border-radius: 10px;
+                margin-bottom: 10px;
+              "
+              value="Submit"
+              type="submit"
+              id="submitButton"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+        <label
+          style="
+            padding: 10px;
+            background-color: blanchedalmond;
+            font-size: 12px;
+            margin: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+          "
+        >
+          If you are not signed up, click here for the signup page.
+        </label>
+        <a href="signup.html"> <b>Sign up</b></a>
+      </div>
+    </center>
+    <script>
+      const emailInput = document.getElementById("email");
+      const passwordInput = document.getElementById("password");
+      const checkbox = document.getElementById("checkbox");
+      const form = document.getElementById("form");
+      const emailError = document.getElementById("emailError");
+      const passwordError = document.getElementById("passwordError");
+      const checkboxError = document.getElementById("checkboxError");
+
+      const validEmail = "usha@gmail.com";
+      const validPassword = "usha";
+
+      emailInput.addEventListener("input", () => {
+        emailError.textContent = emailInput.value.includes("@")
+          ? ""
+          : "Please enter a valid email.";
+      });
+
+      passwordInput.addEventListener("input", () => {
+        passwordError.textContent =
+          passwordInput.value.length >= 4
+            ? ""
+            : "Password must be at least 4 characters.";
+      });
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        let isValid = true;
+
+        if (!emailInput.value) {
+          emailError.textContent = "Email cannot be empty.";
+          isValid = false;
+        }
+
+        if (!passwordInput.value) {
+          passwordError.textContent = "Password cannot be empty.";
+          isValid = false;
+        }
+
+        if (!checkbox.checked) {
+          checkboxError.textContent = "Please accept terms and conditions.";
+          isValid = false;
+        }
+
+        if (
+          emailInput.value !== validEmail ||
+          passwordInput.value !== validPassword
+        ) {
+          // emailError.textContent = "Invalid email or password.";
+          alert("Invalid email or password.");
+          isValid = false;
+        }
+
+        if (isValid) {
+          window.location.href = "../ushainterproject/Homepageinter.html";
+        }
+      });
+    </script>
+  </body>
+</html>

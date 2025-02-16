@@ -1,0 +1,325 @@
+<html>
+  <head>
+    <style>
+      .checkbox-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .checkbox-container input[type="checkbox"] {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+      }
+      .checkbox-container label {
+        font-size: 12px;
+      }
+      .error {
+        color: red;
+        font-size: 12px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-image: url('../ushainterproject/assects/19.jpg');
+      background-repeat: no-repeat;
+      background-size: 3000px;
+      background-position: center;
+    "
+  >
+    <center>
+      <div
+        style="
+          background: linear-gradient(
+            rgb(34, 34, 34),
+            rgb(166, 165, 165),
+            rgb(175, 171, 171),
+            rgb(100, 99, 99)
+          );
+
+          border: 1px solid black;
+          border-radius: 10px;
+          width: 420px;
+          height: 900px;
+          margin-top: 60px;
+        "
+      >
+        <div>
+          <img
+          src="../ushainterproject/assects/Usha interior.jpg"
+          width="120px"
+          height="120px"
+          style="margin-top: 60px; border-radius: 60px"
+            alt="signup"
+          /><br />
+          <h2>Usha Interior Signup</h2>
+        </div>
+        <form id="form">
+          <div style="margin: 5px">
+            <label
+              style="
+                color: rgb(216, 68, 68);
+                font-weight: bold;
+                background-color: blanchedalmond;
+                padding: 5px;
+                border-radius: 10px;
+              "
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              style="
+                padding: 10px;
+                margin: 5px;
+                margin-left: 30px;
+                border-radius: 10px;
+              "
+              placeholder="Enter the name"
+            />
+            <br />
+            <span class="error" id="nameError"></span><br /><br />
+            <label
+
+              style="
+                color: rgb(216, 68, 68);
+                font-weight: bold;
+                background-color: blanchedalmond;
+                padding: 5px;
+                border-radius: 10px;
+              "
+
+              >Contact no</label
+            >
+            <input
+
+              type="text"
+              id="contact"
+              style="
+                padding: 10px;
+              
+                margin-right: 20px;
+                border-radius: 10px;
+              "
+              placeholder="Enter the contact no."
+            />
+            <br />
+            <span class="error" id="contactError"></span><br /><br />
+            <label
+              style="
+                color: rgb(216, 68, 68);
+                font-weight: bold;
+                background-color: blanchedalmond;
+                padding: 5px;
+                border-radius: 10px;
+              "
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              style="
+                padding: 10px;
+              
+                margin-left: 10px;
+                border-radius: 10px;
+              "
+              placeholder="Enter the address"
+            />
+            <br />
+            <span class="error" id="emailError"></span><br /><br />
+            <label
+              style="
+                color: rgb(216, 68, 68);
+                font-weight: bold;
+                background-color: blanchedalmond;
+                padding: 5px;
+                border-radius: 10px;
+              "
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              style="padding: 10px; margin: 5px; border-radius: 10px"
+              placeholder="Enter the password"
+            />
+            <br />
+            <span class="error" id="passwordError"></span><br /><br />
+            <label
+              style="
+                color: rgb(216, 68, 68);
+                font-weight: bold;
+                background-color: blanchedalmond;
+                padding: 5px;
+                border-radius: 10px;
+              "
+              >Re-Password</label
+            >
+            <input
+              type="password"
+              id="password2"
+              style="
+                padding: 10px;
+             
+                margin-right: 25px;
+                border-radius: 10px;
+              "
+              placeholder="Re-enter the password"
+            />
+            <br />
+            <span class="error" id="rePasswordError"></span><br /><br />
+            <div class="checkbox-container">
+              <input type="checkbox" id="checkbox" name="terms" />
+              <label
+                style="
+                  background-color: blanchedalmond;
+                  font-weight: bold;
+                  padding: 5px;
+                  border-radius: 10px;
+                "
+                for="terms"
+                >I agree to the terms and conditions applied</label
+              >
+            </div>
+            <br />
+            <span class="error" id="checkboxError"></span><br />
+            <button
+              type="submit"
+              style="
+                margin-left: 50px;
+                margin-top: 5px;
+                width: 100px;
+                height: 30px;
+                color: black;
+                background-color: blanchedalmond;
+                font-weight: bold;
+                color: rgb(218, 23, 23);
+                border-radius: 10px;
+                margin-bottom: 10px;
+              "
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+        <label
+          style="
+            padding: 5px;
+            background-color: blanchedalmond;
+            font-size: 12px;
+            margin: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+          "
+        >
+          If you already signed up, click here for the login page
+        </label>
+        <a href="login.html"> <b>Login</b></a>
+      </div>
+    </center>
+  </body>
+<script>
+  const nameInput = document.getElementById("name");
+  const contactInput = document.getElementById("contact");
+  const emailInput = document.getElementById("email");
+  const passwordInput = document.getElementById("password");
+  const rePasswordInput = document.getElementById("password2");
+  const checkbox = document.getElementById("checkbox");
+  const form = document.getElementById("form");
+
+  const nameError = document.getElementById("nameError");
+  const contactError = document.getElementById("contactError");
+  const emailError = document.getElementById("emailError");
+  const passwordError = document.getElementById("passwordError");
+  const rePasswordError = document.getElementById("rePasswordError");
+  const checkboxError = document.getElementById("checkboxError");
+
+  const validateName = () => {
+    if (nameInput.value.trim() === "") {
+      nameError.textContent = "Name cannot be empty.";
+      return false;
+    } else {
+      nameError.textContent = "";
+      return true;
+    }
+  };
+
+  const validateContact = () => {
+    if (!/^\d{10}$/.test(contactInput.value)) {
+      contactError.textContent = "Contact number must be 10 digits.";
+      return false;
+    } else {
+      contactError.textContent = "";
+      return true;
+    }
+  };
+
+  const validateEmail = () => {
+    if (!emailInput.value.includes("@")) {
+      emailError.textContent = "Please enter a valid email.";
+      return false;
+    } else {
+      emailError.textContent = "";
+      return true;
+    }
+  };
+
+  const validatePassword = () => {
+    if (passwordInput.value.length < 4) {
+      passwordError.textContent = "Password must be at least 4 characters.";
+      return false;
+    } else {
+      passwordError.textContent = "";
+      return true;
+    }
+  };
+
+  const validateRePassword = () => {
+    if (rePasswordInput.value !== passwordInput.value) {
+      rePasswordError.textContent = "Passwords do not match.";
+      return false;
+    } else {
+      rePasswordError.textContent = "";
+      return true;
+    }
+  };
+
+  const validateCheckbox = () => {
+    if (!checkbox.checked) {
+      checkboxError.textContent = "Please accept terms and conditions.";
+      return false;
+    } else {
+      checkboxError.textContent = "";
+      return true;
+    }
+  };
+
+  // Adding event listeners for real-time validation
+  nameInput.addEventListener("input", validateName);
+  contactInput.addEventListener("input", validateContact);
+  emailInput.addEventListener("input", validateEmail);
+  passwordInput.addEventListener("input", validatePassword);
+  rePasswordInput.addEventListener("input", validateRePassword);
+  checkbox.addEventListener("change", validateCheckbox);
+
+  // Submit event listener
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const isFormValid =
+      validateName() &&
+      validateContact() &&
+      validateEmail() &&
+      validatePassword() &&
+      validateRePassword() &&
+      validateCheckbox();
+
+    if (isFormValid) {
+      window.location.href = "../ushainterproject/Homepageinter.html";
+    }
+  });
+</script>
+
+</html>
